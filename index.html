@@ -1,41 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-    <title>Project </title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Project</title>
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
-            <div class="navbar__brand"><img class="navbar__logo" src="./assets/logo.png" alt="zomato-logo"></div>
-            <div class="navbar__nav__items">
-                <button class="button--primary">Order Food</button>
-            </div>
-        </nav>
+      <nav class="navbar">
+        <div class="navbar__brand">
+          <img class="navbar__logo" src="./assets/logo.png" alt="zomato-logo" />
+        </div>
+        <div class="navbar__nav__items">
+          <button class="button--primary">Order Food</button>
+        </div>
+      </nav>
     </header>
     <main>
-    <section class="container">
-         <div class="container__img">
-             <img class="hero__img" src="./assets/hero.jpg" alt="food"/>
-             <img src="./assets/svg/heroShape.svg" alt="hero bg shape" class="hero__shape__img"/>
-             <img src="./assets/svg/herobgpattren.svg" alt="hero bg pattern" class="hero__pattern__img"/>
-            </div>
-        <div class="hero__description">
-            <h1 class="hero__text">Order from your favourite restaurants near you</h1>
-            <button class="button--primary">Order Now</button>
+      <section class="hero-container">
+        <div class="container__img">
+          <img class="hero__img" src="./assets/hero.jpg" alt="food" />
+          <img
+            src="./assets/svg/heroShape.svg"
+            alt="hero bg shape"
+            class="hero__shape__img"
+          />
+          <img
+            src="./assets/svg/herobgpattren.svg"
+            alt="hero bg pattern"
+            class="hero__pattern__img"
+          />
         </div>
-       
-    </section>
+        <div class="hero__description">
+          <h1 class="hero__text">
+            Order from your favourite restaurants near you
+          </h1>
+          <button class="button--primary">Order Now</button>
+        </div>
+      </section>
+      <!-- menu card -->
+      <section class="menu__card">
+        
 
-    <section>
-        <h1></h1>
-        <div></div>
-    </section>
+        <h1 class="explore__menu__text">Explore our menu</h1>
+<div class="explore__menu__rombus"></div>
+        
+
+          <div class="food__menu">
+
+              <!-- card container -->
+            <div class="card__container">
+
+                <!-- burger card -->
+              <div class="card">
+                <img
+                  class="card__image"
+                  src="./assets/burger.jpg"
+                  alt="burger"
+                />
+                <div class="food__description">
+                  <h2>Burgers</h2>
+                  <p>
+                    Burger King, Mcdonalds, Burger Place
+                    <span style="color: red">+3</span>
+                  </p>
+                </div>
+              </div>
+
+              <!-- pizza card -->
+              <div class="card" id="middle__card">
+                <img 
+                  class="card__image" 
+                  src="./assets/pizza.jpg" 
+                  alt="pizza" />
+                <div class="food__description">
+                  <h2>Pizza</h2>
+                  <p>
+                    Pizza Hut, Domino's Pizza 
+                    <span style="color: red">+3</span>
+                  </p>
+                </div>
+              </div>
+
+              <!-- iceCream card -->
+              <div class="card">
+                <img
+                  class="card__image"
+                  src="./assets/iceCream.jpg"
+                  alt="iceCream"
+                />
+                <div class="food__description">
+                  <h2>Ice Creams</h2>
+                  <p>Baskin Robins, Ibaco <span style="color: red">+3</span></p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="view__more__btn">
+            <button class="button--primary btn">View More</button>
+          </div>
+        
+      </section>
+      <section class="">
+
+      </section>
     </main>
-</body>
+  </body>
 </html>

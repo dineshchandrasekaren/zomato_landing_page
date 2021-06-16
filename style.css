@@ -14,9 +14,11 @@
   --color-background: #ebf2ff;
   --color-heading: #1d3557;
 }
-h1{
-    color: var(--color-heading);
+h1 {
+  color: var(--color-heading);
+  font-size: 2rem;
 }
+
 body {
   font-family: "Merriweather", san-serif;
   background-color: var(--color-background);
@@ -27,7 +29,6 @@ body {
 /* reusable */
 .button--primary {
   background-image: var(--gradiant-button);
-  box-shadow: 1px 2px 6px grey;
   padding: 0.6rem 0.8rem;
   border: none;
   color: #fff;
@@ -35,14 +36,16 @@ body {
   border-radius: 5px;
   transition: background-image 2s ease;
   background-size: 200% auto;
+  transition: transform 0.25s ease;
 }
-.button--primary:hover {
+.button--primary:hover, .button--primary:focus {
   background-image: linear-gradient(
     to left,
     #dd2476 0%,
     #ff512f 51%,
     #dd2476 100%
   );
+  transform: scale(0.98);
 }
 
 /* NAVBAR */
@@ -77,19 +80,20 @@ body {
     padding: 0 3rem;
   }
   .navbar__brand {
-    width: 9%;
-}
+    width: 9.5%;
+  }
   .button--primary {
-    padding: 0.9rem 1.5rem;
+    padding: 1rem 1.8rem;
   }
 }
 
 /* hero section */
 
-.container {
+.hero-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+   margin-bottom: 3rem;
 }
 
 .container__img {
@@ -116,30 +120,127 @@ body {
   padding: 0 4.5%;
   width: 90%;
   margin: auto;
-  text-align: center;
+  text-align: left;
 }
 .hero__text {
   margin-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
-  .container {
+  .hero-container {
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
-    padding: 0  4% 1rem 1% ;
+    padding: 0 4% 1rem 1%;
   }
   .hero__description {
     text-align: left;
-   
+    line-height: 1.2;
     padding-right: 0;
     margin-left: 2%;
   }
-  h1{
- font-size: 2rem;
+  h1 {
+    font-size: 2.2rem;
   }
 }
 @media screen and (min-width: 1024px) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+  }
+}
+
+/* card section */
+.card__image{
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.card{
+  width:282.391px;
+  background-color: #fff;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+.card,.card:active{
+   transform: scale(1) translateY(0) ;
+    transition: transform 0.25s ease;
+      box-shadow: 0 25px 50px -12px rgb(0 0 0 / 30%);
+  }
+ .card:hover,.card:focus{
+    transform: scale(1.01) translateY(-3px) ;
+     box-shadow: 0 25px 50px -12px rgb(0 0 0 / 60%);
+  }
+.food__description{
+ padding: 1.5rem;
+}
+.explore__menu__text{
+ width: fit-content;
+  margin: auto;
+ 
+}
+.view__more__btn{
+  display: flex;
+  justify-content: center;
+}
+
+
+@media screen and (min-width:768px) {
+  .explore__menu__text{
+    margin-bottom: 3rem;
+  }
+  .btn{
+  background-image: none;
+  box-shadow: none;
+  background-color: transparent;
+  width: 100%;
+  transition: all 0.37s ease-in-out;
+  transform: scale(1.03);
+}
+.btn:hover{
+   display: block;
+    background-image: none;
+  background-color: white;
+  color:  #dd2476;
+  width:30%;
+  font-weight: 700;
+}
+  
+  .card__container{
+   
+    display: flex;
+    gap: 15px;
+    justify-content: space-evenly;
+    z-index: 2;
+  }
+  #middle__card{
+    margin: -20px auto 50px auto;
+  }
+  .food__menu{
+    width: 90%;
+    margin: auto;
+     transform: none;
+  }
+ .menu__card .explore__menu__rombus{
+    transform: skewY(-5deg);
+ }
+  .explore__menu__rombus{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background: var(--gradiant-button);
+   
+    z-index: -3;
+  }
+  .menu__card{
+     position: relative;
+     width: 80%;
+    margin: auto;
+   
+  }
+}
+@media screen and (min-width:1024px){
+  .food__menu{
+    width: 70%;
   }
 }
