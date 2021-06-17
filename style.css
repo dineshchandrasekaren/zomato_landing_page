@@ -321,6 +321,7 @@ max-height: 220px;
  gap: 10px;
  align-items: center;
  margin: 3rem;
+ width: 90%;
 }
 .contact__text{
   text-align: center;
@@ -329,6 +330,7 @@ max-height: 220px;
   border-radius: 30px;
   padding: 0.4rem auto;
   margin:  4px;
+  white-space: nowrap;
 }
 
 .email{
@@ -337,7 +339,7 @@ max-height: 220px;
   display: inline-block;
 }
 .input{
-  display: inline-block;
+  display: inherit;
 width: fit-content;
 margin: auto;
   border-radius: 30px;
@@ -418,5 +420,10 @@ ul{
   }
   li{
     font-size: unset;
+  }
+}
+@media screen and (max-width:425px) {
+  ul{
+        margin: 12px;
   }
 }
