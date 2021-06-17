@@ -433,6 +433,7 @@ ul{
 width: 131px;;
   }
   .input{
+    margin: auto;
         width: 230px;
     padding-left: 9px;
   }
@@ -442,7 +443,4 @@ width: 131px;;
     padding-top: 5px;
     padding-bottom: 5px;
   } 
-.input{
-  width: ;
-}
 }
