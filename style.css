@@ -321,7 +321,7 @@ max-height: 220px;
  gap: 10px;
  justify-content: center;
  align-items: center;
- margin: 3rem;
+ margin: 3rem auto;
  width: 90%;
 }
 .contact__text{
