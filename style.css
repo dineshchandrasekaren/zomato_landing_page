@@ -430,10 +430,10 @@ ul{
 }
 @media screen and (max-width:425px) {
   ul{
-        margin: 12px;
+        margin: 12px auto;
   }
   .email{
-width: 131px;;
+width: 131px;
   }
   .input{
     margin: auto;
