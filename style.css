@@ -430,6 +430,9 @@ ul{
   }
 }
 @media screen and (max-width:425px) {
+  .contact{
+    margin: auto;
+  }
   ul{
         margin: 12px auto;
   }
@@ -437,8 +440,9 @@ ul{
 width: 131px;
   }
   .input{
+    width: 230px;
     margin: auto;
-        width: 230px;
+        
     padding-left: 9px;
   }
   .round{
