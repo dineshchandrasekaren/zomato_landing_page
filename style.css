@@ -339,12 +339,15 @@ max-height: 220px;
   display: inline-block;
 }
 .input{
-  display: inherit;
+  /* display: inherit;
 width: fit-content;
-margin: auto;
+margin: auto; */
+display: flex;
+justify-content: space-evenly;
   border-radius: 30px;
   padding-left: 30px;
   background-color: #fff;
+  white-space: nowrap;
 }
 @media screen and (min-width:768px){
   .contact{
@@ -426,4 +429,20 @@ ul{
   ul{
         margin: 12px;
   }
+  .email{
+width: 131px;;
+  }
+  .input{
+        width: 230px;
+    padding-left: 9px;
+  }
+  .round{
+        padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  } 
+.input{
+  width: ;
+}
 }
