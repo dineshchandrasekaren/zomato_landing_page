@@ -319,6 +319,7 @@ max-height: 220px;
  display: flex;
  flex-direction: column;
  gap: 10px;
+ justify-content: center;
  align-items: center;
  margin: 3rem;
  width: 90%;
@@ -336,6 +337,7 @@ max-height: 220px;
 .email{
   border-radius: 30px;
   border: none;
+  outline: none;
   display: inline-block;
 }
 .input{
